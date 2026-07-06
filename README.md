@@ -1,0 +1,2 @@
+# Portfolio Analyzer
+A command-line interface application that allows users to input, track, and analyze their daily expenses, income, and a small mock investment portfolio. The application will process raw text data, manage complex data structures, perform financial calculations, and generate a structured summary report.
