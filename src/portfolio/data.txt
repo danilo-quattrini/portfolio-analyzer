@@ -1,0 +1,8 @@
+income : 2500.50 , food : -12.30 , utilities : -85.00 , INCome : 50.00
+food : -45.00 , rent : -1200.00 , Income : 100.00 , transport : -30.00
+income:3000.00,food:-20.00,utilities: -100.00 , entertainment : -50.00
+utilities : -90.00 , income : 2800.00 , food: -15.50 , ,
+income : 2600.00 , food : -10.00 , utilities : -70.00 , TAX : -200.00 , extra: 10.00
+food : -5.00 , income : 2400.00 , utilities : -80.00 , INC : 40.00
+income : 2750.00 , food : null , utilities : -88.00 , income : 60.00
+income : 2550.00 , food : -25.00 , , utilities : -95.00 , junk_data_here
