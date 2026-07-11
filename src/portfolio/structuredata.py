@@ -1,6 +1,6 @@
-from cleaner import clean_data
+from .cleaner import clean_data
 from collections import defaultdict
-from translator import check_dictionary
+from .translator import check_dictionary
 
 transactions = defaultdict(int)
 

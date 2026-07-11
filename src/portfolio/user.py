@@ -1,4 +1,4 @@
-from validator import validated_user
+from .validator import validated_user
 
 def presentation_menu():
     print("""
@@ -27,5 +27,3 @@ def user_initialization():
                 "budget": float(budget), 
                 "starting_currency": float(starting_currency)
             }
-    
-print(user_initialization())
