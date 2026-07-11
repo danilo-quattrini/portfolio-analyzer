@@ -1,5 +1,5 @@
 {
-    "inc": "income",
-    "foo" : "food",
-    "util": "utilities"
+    "income": ["inc", "in"],
+    "food" : ["foo", "fo"],
+    "utilities": ["util", "ut", "uti", "utili"]
 }
