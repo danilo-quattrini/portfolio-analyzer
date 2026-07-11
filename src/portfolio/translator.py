@@ -10,14 +10,14 @@ def open_dictionary(dictionary):
         print(f"Error: '{dictionary}' file was not found.")
 
 """ 
-Check if a specific string it's in the dictionary
-as key, and return its value
+Check if a specific string it's in the 
+dictionary as key, and return its value
+
+:param string: the string to check if is int the translator-dictionary
 """    
 def check_dictionary(string):
     dictionary = open_dictionary("transactions-dictionary.json") 
     
-    print(string.startswith(tuple(dictionary.keys())))
-    """ if string.startswith(tuple(dictionary.values())):
-        return True """
-
-print(check_dictionary("ut."))
+    for name, abbreviation in dictionary.items():
+        if string.startswith(tuple(abbreviation)):
+            return name
