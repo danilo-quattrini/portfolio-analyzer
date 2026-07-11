@@ -9,10 +9,11 @@ def file_data(file_name):
         return file.read()
 
 """ 
-Split data string following a specific regex, from the re module
+Split data string following a specific regex, from the re module removing
+whitespace and lower each string of the data
 """
 def split_data(data, regex):
-    return [cleaned_data.strip() for cleaned_data in re.split(regex, data)]
+    return [cleaned_data.strip().lower() for cleaned_data in re.split(regex, data)]
 
 """ 
 Split a list of elements into different chunks.
@@ -27,6 +28,7 @@ def split_list(lst, element_to_group):
 Clean a string of data removing the unnecessary element from the string
 
 :param data: the data string to be cleaned
+:return: a list of cleaned data where each chunk has a specific format ["name", "amount"]
 """
 def data_cleaner(data):
     raw_data_list = split_data(data, r'[:,\n\s]+')
