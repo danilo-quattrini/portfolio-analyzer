@@ -15,8 +15,7 @@ dictionary as key, and return its value
 
 :param string: the string to check if is int the translator-dictionary
 """    
-def check_dictionary(string):
-    dictionary = open_dictionary("transactions-dictionary.json") 
+def check_dictionary(string, dictionary):
     
     for name, abbreviation in dictionary.items():
         if string.startswith(tuple(abbreviation)):
