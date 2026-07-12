@@ -1,7 +1,6 @@
 from .cleaner import clean_data
 from collections import defaultdict
-from .translator import check_dictionary
-
+from transactions import set_category
 transactions = defaultdict(int)
 
 def struct_data():
@@ -17,4 +16,6 @@ def struct_data():
             continue
     
         transactions[name] += float(price)
+        
+    set_category(transactions.keys())
     return transactions
